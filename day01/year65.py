@@ -26,12 +26,19 @@ def get_year_65(age):
     return current_year + years_remaining
 
 def show_response(name, year):
-    if year < datetime.date.today().year:
+    current_year = datetime.date.today().year
+    
+    if year < current_year:
         tense = 'turned'
     else:
         tense = 'will turn'
 
-    print(name + ', you ' + tense + ' 65 in the year ' + str(year) + '.\n')
+    message = name + ', you ' + tense + ' 65 in the year ' + str(year) + '.'
+
+    if current_year - (year - 65) > 115 or current_year - (year-65) < 5:
+        message += ' Seems unlikely.'
+
+    print (message)
     return request_restart()
 
 def request_restart():
@@ -39,7 +46,8 @@ def request_restart():
     if restart.lower() == 'y':
         return get_name_and_age()
     else:
-        return False
+        print('Goodbye.')
+        return
 
 if __name__ == '__main__':
     get_name_and_age()

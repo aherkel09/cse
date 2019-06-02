@@ -14,7 +14,7 @@ def summer_winter():
     elif num % 5 == 0:
         print('Winter\n')
     else:
-        print(num)
+        print(str(num) + '\n')
 
     return summer_winter()
 

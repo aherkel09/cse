@@ -1,24 +1,21 @@
-def summer_winter(error=False):
-    if error:
-        print('Error: Please enter only numbers\n')
-        
+def summer_winter():
     num = input('Please enter a number: ')
     
     try:
         num = int(num)
     except:
-        summer_winter(error=True)
+        print('Error: Please enter only numbers\n')
+        summer_winter()
         
     if num % 3 == 0 and num % 5 == 0:
-        print('SummerWinter')
+        print('SummerWinter\n')
     elif num % 3 == 0:
-        print('Summer')
+        print('Summer\n')
     elif num % 5 == 0:
-        print('Winter')
+        print('Winter\n')
     else:
         print(num)
 
-    print('\n')
     return summer_winter()
 
 if __name__ == '__main__':

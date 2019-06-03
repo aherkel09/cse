@@ -9,7 +9,7 @@ def get_year_65():
         print(fname + ', you will turn 65 in the year ' + str(year_65) + '.\n')
     except:
         print('Error: Please use only letters for your name & numbers for your age.\n')
-        return get_year_65()
+        get_year_65()
 
 if __name__ == '__main__':
     get_year_65()

@@ -1,12 +1,14 @@
 import day01_functions
 
 def get_functions():
+    global functions
     functions = {}
+    
     print('Days: 01')
     day = input('Which day do you want to demonstrate?: ')
 
     if day == '01':
-        functions = day01.set_functions()
+        functions = day01_functions.set_functions()
     else:
         return get_functions()
 

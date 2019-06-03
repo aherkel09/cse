@@ -1,8 +1,7 @@
 def set_functions():
     from day01 import (
         year_65, max_numbers, summer_winter, driver_speed, even_odd,
-        multiples, check_prime, #primes, <-- pending completion
-        sort, perfect_number
+        multiples, check_prime, primes, sort, perfect_number
     )
 
     functions = {
@@ -13,7 +12,7 @@ def set_functions():
         5: ('See the odds & evens below a number', even_odd.get_limit),
         6: ('See the multiples of 3 & 5 below a number', multiples.get_number),
         7: ('Check if a number is prime', check_prime.get_number),
-        # 8: ('See all the prime numbers below a number', primes.get_limit), <-- pending completion
+        8: ('See all the prime numbers below a number', primes.get_limit),
         9: ('See a sorted list of 3 numbers', sort.get_numbers),
         10: ('Check if a number is a perfect number', perfect_number.get_number),
         11: ('Exit', 'exit')

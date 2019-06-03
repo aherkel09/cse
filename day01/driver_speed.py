@@ -5,7 +5,7 @@ def get_speed():
         get_points(float(speed))
     except:
         print('Please enter an number speed.\n')
-        return get_speed()
+        get_speed()
     
 def get_points(speed):
     points = (round(speed - 56) // 5) + 1

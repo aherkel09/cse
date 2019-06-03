@@ -3,8 +3,8 @@ from day01 import (
     multiples, check_prime, primes, sort, perfect_number
 )
 
-operations = {
-    1: ('Find out when I will turn 65', year_65.get_year_65()),
+functions = {
+    1: ('Find out when you will turn 65', year_65.get_year_65()),
     2: ('Get the maximum of 2 numbers', max_numbers.get_max_of_numbers()),
     3: ('summer_winter', summer_winter.summer_winter()),
     4: ('Check driver speed', driver_speed.get_speed()),
@@ -16,19 +16,19 @@ operations = {
     10: ('Check if a number is a perfect number', perfect_number.get_number())
 }
 
-print('Day01 Operations:')
-for key, value in operations.items():
+print('Day01 Functions:')
+for key, value in functions.items():
     print(key, ':', value[0])
 
-def get_operation():        
-    selected = input('Enter the number of the operation you would like to perform: ')
+def get_function():        
+    selected = input('Enter the number of the function you would like to run: ')
     
     try:
-        operations[selected][1]()
-        return get_operation()
+        functions[selected][1]()
+        return get_function()
     except:
         print('Error: Please enter a valid selection.')
-        return get_operation()
+        return get_function()
 
 if __name__ == '__main__':
-    get_operation()
+    get_function()

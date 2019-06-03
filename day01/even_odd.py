@@ -17,7 +17,6 @@ def get_limit():
 
     try:
         even_odd(int(limit))
-        return get_limit()
     except:
         print('Error: Please use only integers')
         return get_limit()

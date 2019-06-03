@@ -7,7 +7,6 @@ def get_year_65():
     try:
         year_65 = datetime.date.today().year + (65 - int(age))
         print(fname + ', you will turn 65 in the year ' + str(year_65) + '.\n')
-        return get_year_65()
     except:
         print('Error: Please use only letters for your name & numbers for your age.\n')
         return get_year_65()

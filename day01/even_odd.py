@@ -1,4 +1,4 @@
-def even_numbers(limit):
+def even_odd(limit):
     if limit > 1000:
         return print('Please choose a number under 1000')
     count = 0
@@ -16,7 +16,7 @@ def get_limit():
     limit = input('Please enter a number: ')
 
     try:
-        even_numbers(int(limit))
+        even_odd(int(limit))
         return get_limit()
     except:
         print('Error: Please use only integers')

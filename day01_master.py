@@ -16,16 +16,19 @@ operations = {
     10: ('Check if a number is a perfect number', perfect_number.get_number())
 }
 
-def get_operation():
-    for key, value in operations.items():
-        print(key, ':', value[0])
-        
+print('Day01 Operations:')
+for key, value in operations.items():
+    print(key, ':', value[0])
+
+def get_operation():        
     selected = input('Enter the number of the operation you would like to perform: ')
     
     try:
-        operations[selected][1]
+        operations[selected][1]()
+        return get_operation()
     except:
         print('Error: Please enter a valid selection.')
+        return get_operation()
 
 if __name__ == '__main__':
     get_operation()

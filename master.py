@@ -27,18 +27,16 @@ def request_function():
     try:
         function_tuple = functions[int(selected)] # get function to run from dict
         run_function(function_tuple)
+        request_restart(function_tuple)
     except ValueError: # catch errors from user input
         print('Error: Please enter a valid selection')
-        return request_function()
-    except: # catch any errors from selected function
-        return request_restart(function_tuple)
+        request_function()
+    except Exception: # catch any errors from selected function
+        request_restart(function_tuple)
 
 def run_function(function_tuple):
     print(function_tuple[0]) # print function name
-    try:
-        function_tuple[1]()
-    finally:
-        return request_restart(function_tuple) # always ask user to restart
+    function_tuple[1]()
     
 def request_restart(function):
     restart = input('Run function again? (y/n): ').lower()

@@ -1,4 +1,4 @@
-import check_prime as prime
+from day01 import check_prime as prime
 
 def get_primes(limit):
     primes = [2]
@@ -6,7 +6,7 @@ def get_primes(limit):
 
     while count < limit:
         if count not in primes and prime.check_prime(count):
-            primes += [count]
+            primes += count
         count += 1
     
     return print(primes)

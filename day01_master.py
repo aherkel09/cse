@@ -18,26 +18,26 @@ functions = {
     11: ('Exit', exit),
 }
 
-print('Day01 Functions:')
+print('Day01 Functions:\n')
 for key, value in functions.items():
     print(key, ':', value[0])
 
 def get_function():        
-    selected = input('Enter the number of the function you would like to run: ')
+    selected = input('\nEnter the number of the function you would like to run: ')
     
     try:
         run = functions[int(selected)][1]
         run()
         return request_restart(run)
     except:
-        print('Error: Please enter a valid selection.')
+        print('Error: Please enter a valid selection')
         return get_function()
 
 def request_restart(run):
     restart = input('Run function again? (y/n): ')
-    if input.lower() == 'y':
+    if restart.lower() == 'y':
         run()
-        return request_restart()
+        return request_restart(run)
     
     return get_function()
 

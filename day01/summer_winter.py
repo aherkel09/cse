@@ -16,7 +16,5 @@ def summer_winter():
     else:
         print(num, '\n')
 
-    return summer_winter()
-
 if __name__ == '__main__':
     summer_winter()

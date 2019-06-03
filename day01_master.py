@@ -1,6 +1,6 @@
 from day01 import (
     year_65, max_numbers, summer_winter, driver_speed, even_odd,
-    multiples, #check_prime, primes, 
+    multiples, #check_prime, primes, <-- pending completion
     sort, perfect_number
 )
 
@@ -11,37 +11,49 @@ functions = {
     4: ('Check driver speed', driver_speed.get_speed),
     5: ('See the odds & evens below a number', even_odd.get_limit),
     6: ('See the multiples of 3 & 5 below a number', multiples.get_number),
-    # 7: ('Check if a number is prime', check_prime.get_number),
-    # 8: ('See all the prime numbers below a number', primes.get_limit),
+    # 7: ('Check if a number is prime', check_prime.get_number), <-- pending completion
+    # 8: ('See all the prime numbers below a number', primes.get_limit), <-- pending completion
     9: ('See a sorted list of 3 numbers', sort.get_numbers),
     10: ('Check if a number is a perfect number', perfect_number.get_number),
-    11: ('Exit', exit),
+    11: ('Exit')
 }
 
 print('Day01 Functions:\n')
 for key, value in functions.items():
-    print(key, ':', value[0])
+    print(key, ':', value[0]) # print function number & name
 
-def get_function():        
+def get_function():
     selected = input('\nEnter the number of the function you would like to run: ')
+
+    if selected == '11':
+        raise SystemExit
     
     try:
-        run = functions[int(selected)][1]
-        print('\n')
-        run()
-        return request_restart(run)
-    except:
+        function_tuple = functions[int(selected)] # get function to run from dict
+        run_function(function_tuple)
+    except ValueError: # catch errors from user input
         print('Error: Please enter a valid selection')
         return get_function()
+    except: # catch any errors from selected function
+        return request_restart(function_tuple)
 
-def request_restart(run):
-    restart = input('Run function again? (y/n): ')
-    if restart.lower() == 'y':
-        print('\n')
-        run()
-        return request_restart(run)
+def run_function(function_tuple):
+    print(function_tuple[0]) # print function name
+    try:
+        function_tuple[1]()
+    finally:
+        return request_restart(function_tuple) # always ask user to restart
     
-    return get_function()
+def request_restart(function):
+    restart = input('Run function again? (y/n): ').lower()
+    if restart == 'y':
+        run_function(function)
+    elif restart == 'n':
+        get_function()
+    else:
+        print('Please enter "y" to restart or "n" to choose a new function\n')
+        request_restart(function)
 
 if __name__ == '__main__':
     get_function()
+    

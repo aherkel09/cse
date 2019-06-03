@@ -22,7 +22,7 @@ def get_number():
         is_perfect_number(int(num)) # convert to int & check number
     except:
         print('Please enter only positive integers\n')
-        return get_number() # request new input on error
+        get_number() # request new input on error
 
 if __name__ == '__main__':
     get_number()

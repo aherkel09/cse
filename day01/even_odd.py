@@ -19,7 +19,7 @@ def get_limit():
         even_odd(int(limit))
     except:
         print('Error: Please use only integers')
-        return get_limit()
+        get_limit()
 
 if __name__ == '__main__':
     get_limit()

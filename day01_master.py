@@ -36,7 +36,8 @@ def get_function():
 def request_restart(run):
     restart = input('Run function again? (y/n): ')
     if input.lower() == 'y':
-        return run()
+        run()
+        return request_restart()
     
     return get_function()
 

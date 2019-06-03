@@ -9,15 +9,15 @@ def get_multiples(limit):
         count += 1
     return print('Limit Reached\n')
 
-def get_input():
+def get_number():
     limit = input('Please enter a number: ')
     
     try:
         get_multiples(int(limit)) # verify input can be converted to int
-        return get_input()
+        return get_number()
     except:
         print('Error: Please enter only integers\n')
-        return get_input() # request new input on error
+        return get_number() # request new input on error
     
 if __name__ == '__main__':
-    get_input()
+    get_number()

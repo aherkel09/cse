@@ -14,7 +14,6 @@ def get_number():
     
     try:
         get_multiples(int(limit)) # verify input can be converted to int
-        return get_number()
     except:
         print('Error: Please enter only integers\n')
         return get_number() # request new input on error

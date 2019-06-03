@@ -7,7 +7,7 @@ def get_max_of_numbers():
         num2 = float(num2)
     except:
         print('Error: Please enter only numbers\n')
-        return get_max_of_numbers()
+        get_max_of_numbers()
         
     if num1 == num2:
         print(num1, 'is equal to', num2, '\n')

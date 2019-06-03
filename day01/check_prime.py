@@ -1,15 +1,15 @@
 def check_prime(num):
     if num < 2:
-        return false
+        return False
     elif num == 2:
         return True
     
     count = 2
     while count < num:
-        if count % num == 0:
+        if num % count == 0:
             return False
         count += 1
-    
+
     return True
 
 def get_number():
@@ -23,3 +23,4 @@ def get_number():
 
 if __name__ == '__main__':
     get_number()
+    

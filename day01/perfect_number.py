@@ -20,7 +20,6 @@ def get_number():
 
     try:
         is_perfect_number(int(num)) # convert to int & check number
-        return get_number()
     except:
         print('Please enter only positive integers\n')
         return get_number() # request new input on error

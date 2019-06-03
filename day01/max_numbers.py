@@ -16,7 +16,5 @@ def get_max_of_numbers():
     elif num2 > num1:
         print(num2, '\n')
     
-    return get_max_of_numbers()
-
 if __name__ == '__main__':
     get_max_of_numbers()

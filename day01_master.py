@@ -27,6 +27,7 @@ def get_function():
     
     try:
         run = functions[int(selected)][1]
+        print('\n')
         run()
         return request_restart(run)
     except:
@@ -36,6 +37,7 @@ def get_function():
 def request_restart(run):
     restart = input('Run function again? (y/n): ')
     if restart.lower() == 'y':
+        print('\n')
         run()
         return request_restart(run)
     

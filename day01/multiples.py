@@ -1,6 +1,7 @@
 def get_multiples(limit):
-    if limit >= 1000: # defined for integers <= 1000
-        return print('Please choose a number less than 1000\n')
+    if limit <= 0 or limit >= 1000: # defined on {0 < limit < 1000}
+        return print('Please choose a positive number less than 1000\n')
+    
     count = 0
     while count <= limit:
         if count % 3 == 0 or count % 5 == 0:

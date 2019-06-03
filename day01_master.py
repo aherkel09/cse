@@ -7,7 +7,7 @@ from day01 import (
 functions = {
     1: ('Find out when you will turn 65', year_65.get_year_65),
     2: ('Get the maximum of 2 numbers', max_numbers.get_max_of_numbers),
-    3: ('summer_winter', summer_winter.summer_winter),
+    3: ('Summer/Winter', summer_winter.summer_winter),
     4: ('Check driver speed', driver_speed.get_speed),
     5: ('See the odds & evens below a number', even_odd.get_limit),
     6: ('See the multiples of 3 & 5 below a number', multiples.get_number),

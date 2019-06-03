@@ -3,7 +3,6 @@ def get_speed():
 
     try:
         get_points(float(speed))
-        return get_speed()
     except:
         print('Please enter an number speed.\n')
         return get_speed()

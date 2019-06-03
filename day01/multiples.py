@@ -16,7 +16,7 @@ def get_number():
         get_multiples(int(limit)) # verify input can be converted to int
     except:
         print('Error: Please enter only integers\n')
-        return get_number() # request new input on error
+        get_number() # request new input on error
     
 if __name__ == '__main__':
     get_number()

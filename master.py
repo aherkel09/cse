@@ -6,7 +6,7 @@ def get_functions():
     day = input('Which day do you want to demonstrate?: ')
 
     if day == '01':
-        day01.set_functions()
+        functions = day01.set_functions()
     else:
         return get_functions()
 

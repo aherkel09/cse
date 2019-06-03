@@ -14,7 +14,6 @@ def get_numbers():
     try:
         num_list = numbers.split(' ') # convert input to list of 3 numbers
         sort(float(num_list[0]), float(num_list[1]), float(num_list[2])) # convert numbers to float & sort
-        return get_numbers()
     except:
         print('Error: Please enter exactly 3 numbers separated by a single space.')
         return get_numbers() # request new input on error

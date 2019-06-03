@@ -8,7 +8,7 @@ def get_functions():
     day = input('Which day do you want to demonstrate?: ')
 
     if day == '01':
-        functions = day01_functions.set_functions()
+        functions = day01_functions.set_functions() # get function data from day01_functions.py
     else:
         return get_functions()
 

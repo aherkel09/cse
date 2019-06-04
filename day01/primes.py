@@ -1,5 +1,3 @@
-from day01 import check_prime as prime
-
 def get_primes(limit):
     primes = [2]
     count = 2
@@ -21,4 +19,7 @@ def get_number():
         get_number()
 
 if __name__ == '__main__':
+    import check_prime as prime
     get_number()
+else:
+    from day01 import check_prime as prime

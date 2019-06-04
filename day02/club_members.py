@@ -1,4 +1,4 @@
-def add_member(members):
+def add_member(members=[]):
   member = input("Please enter a member's name (or type 'stop' to exit): ")
 
   if member != 'stop':
@@ -8,4 +8,4 @@ def add_member(members):
     print(members)
 
 if __name__ == '__main__':
-  add_member([])
+  add_member()

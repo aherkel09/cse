@@ -5,6 +5,7 @@ def set_functions():
 
     functions = {
         1: ('See if a string is a palindrome', palindrome.get_string),
+        11: ('Exit', 'exit'),
     }
 
     return functions

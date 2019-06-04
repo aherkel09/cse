@@ -20,6 +20,14 @@ def checkval(password):
         return(print("Password is valid."))
     return(print("Your password sucks. Please try a different password."))
 
-checkval("75gfgGdh#")
-                
-                
+def get_password():
+    password = input('Please enter a password: ')
+    
+    try:
+        checkval(password)
+    except Exception as error:
+        print('Error:', error)
+        get_password()
+    
+if __name__ == '__main__':
+    get_password()                

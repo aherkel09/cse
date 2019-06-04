@@ -1,14 +1,20 @@
-import day01_functions
+import day01_functions, day02_functions
 
 def get_functions():
     global functions
     functions = {}
     
-    print('Days: 01')
-    day = input('Which day do you want to demonstrate?: ')
+    days = {
+        '01': day01_functions,
+        '02': day02_functions,
+    }
+    days_list = [k for k, v in days.items()]
+    
+    print('Days:', days_list)
+    selected_day = input('Which day do you want to demonstrate?: ')
 
-    if day == '01':
-        functions = day01_functions.set_functions() # get function data from day01_functions.py
+    if selected_day in days_list:
+        functions = days[selected_day].set_functions() # get function data from dayXX_functions.py
     else:
         return get_functions()
 

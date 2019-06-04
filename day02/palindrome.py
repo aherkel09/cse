@@ -1,4 +1,13 @@
 def is_palindrome(string):
+    letters = string.split('')
+    backwards = ''
+    for i in range(letters):
+        backwards += letters[:i]
+    print(backwards)
+    
+    if backwards == string:
+        return True
+    
     return False
 
 def get_string():

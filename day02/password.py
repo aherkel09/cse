@@ -18,7 +18,7 @@ def checkval(password):
                 has_special = True
     if has_length and has_lc and has_uc and has_num and has_special:
         return(print("Password is valid."))
-    return(print("Your password sucks."))
+    return(print("Your password sucks. Please try a different password."))
 
 checkval("75gfgGdh#")
                 

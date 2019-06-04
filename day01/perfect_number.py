@@ -1,7 +1,4 @@
 def is_perfect_number(num):
-    if num < 0:
-        return print('\n') # no result if num < 0
-        
     count = 1
     sum_divisors = 0
     
@@ -19,7 +16,7 @@ def get_number():
     num = input('Please enter a positive integer: ')
 
     try:
-        is_perfect_number(int(num)) # convert to int & check number
+        is_perfect_number(abs(int(num))) # convert to int & check number
     except:
         print('Please enter only positive integers\n')
         get_number() # request new input on error

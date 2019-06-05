@@ -11,7 +11,6 @@ def set_functions():
         4: ('Create a list of club members', club_members.add_member),
         5: ('See total & average grades', grades.add_grade),
         6: ('Check if your password is valid', password.get_password),
-        11: ('Exit', 'exit'),
     }
 
     return functions

@@ -1,10 +1,7 @@
-def add_grade(grades=[], total=0):
-    if len(grades):
-        print('Grades entered:', grades)
-        
+def add_grade(grades, total):
     new_grade = input('Please enter a test grade (type "done" to exit): ')
 
-    if new_grade == 'done' and len(grades):
+    if new_grade == 'done' and len(grades): # make sure there are grades to print
        return print(
            '\nGrades:', grades,
            '\nTotal:', total,
@@ -23,4 +20,4 @@ def add_grade(grades=[], total=0):
             return add_grade(grades, total) # ask user for another grade       
 
 if __name__ == '__main__':
-    add_grade()
+    add_grade([], 0)

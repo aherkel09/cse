@@ -1,8 +1,17 @@
 def add_grade(grades=[], total=0):
+    if len(grades):
+        print('Grades entered:', grades)
+        
     new_grade = input('Please enter a test grade (type "done" to exit): ')
 
-    if new_grade == 'done':
-        print('Grades:', grades, '\nTotal:', total, '\nAverage', total/len(grades))
+    if new_grade == 'done' and len(grades):
+       return print(
+           '\nGrades:', grades,
+           '\nTotal:', total,
+           '\nAverage', total/len(grades)
+           )
+    elif new_grade == 'done':
+        return print('No grades were entered.')
     else:
         try:
             new_grade = abs(float(new_grade)) # try converting to float, use abs to ensure new_grade is positive
@@ -11,7 +20,7 @@ def add_grade(grades=[], total=0):
         except:
             print('Error: please enter only numbers\n')
         finally:
-            return add_grade(grades, total) # always ask user for another grade       
+            return add_grade(grades, total) # ask user for another grade       
 
 if __name__ == '__main__':
     add_grade()

@@ -1,11 +1,11 @@
-def add_member(members=[]):
+def add_member(members):
     member = input("Please enter a member's name (or type 'done' to exit): ")
 
     if member != 'done':
         members += [member]
         return add_member(members)
     else:
-        print(members)
+        return print('Members:', members)
 
 if __name__ == '__main__':
-    add_member()
+    add_member([]) # intitialize members as empty list

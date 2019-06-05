@@ -15,7 +15,6 @@ def set_functions():
         8: ('See all the prime numbers below a number', primes.get_number),
         9: ('See a sorted list of 3 numbers', sort.get_numbers),
         10: ('Check if a number is a perfect number', perfect_number.get_number),
-        11: ('Exit', 'exit')
     }
     
     return functions

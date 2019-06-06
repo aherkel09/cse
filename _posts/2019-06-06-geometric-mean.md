@@ -23,7 +23,7 @@ function geometricMean(numbers) {
   }
 }
 
-function getNumbers() {
+function getGeoNumbers() {
   var counter = 0;
   var numbers_list = prompt('Enter a list of numbers separated by a space: ').split(' ');
   
@@ -39,4 +39,4 @@ function getNumbers() {
 }
 ```
 
-<button type="button" onclick="getNumbers()">Enter Numbers</button>
+<button type="button" onclick="getGeoNumbers()">Enter Numbers</button>

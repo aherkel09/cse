@@ -1,21 +1,21 @@
-function ldl_level(level) {
-  var level_range = {
+function ldlLevel(level) {
+  var levelRange = {
     100: 'optimal',
     130: 'near optimal',
     160: 'borderline',
     190: 'high',
   }
   
-  for (r in level_range) {
+  for (r in levelRange) {
     if (level < r) {
-      return level_range[r];
+      return levelRange[r];
     }
   }
   
   return 'very high';
 }
 
-function get_level() {
+function getLevel() {
   var ldl = prompt('Please enter your LDL level: ')
   
   try {
@@ -23,5 +23,6 @@ function get_level() {
     alert('Your LDL level is ' + level);
   } catch {
     alert('Error: please enter only numbers');
+    getLevel();
   }
 }

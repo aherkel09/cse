@@ -21,14 +21,10 @@ function computeMean(numbers, meanType) {
   return 'The ' + types[meanType] + ' mean of ' + numbers + ' is ' + mean;    
 }
 
-function getMeanNumbers(error=false) {
-  if (error) {
-    alert('Error: please enter only numbers');
-  }
-  
+function getMeanNumbers() {
   var numbers = []
   
-  while (numbers.length < 4) {
+  while (numbers.length < 3) {
     var newNum = prompt('Please enter a number: ');
     if (!isNaN(newNum)) {
       numbers.push(newNum);
@@ -40,6 +36,7 @@ function getMeanNumbers(error=false) {
   if (meanType == 0 || meanType == 1) {
     return alert(computeMean(numbers, meanType));
   } else {
-    return getNumbers(error=true);
+    alert('Error: please enter only numbers');
+    return getNumbers();
   }
 }

@@ -6,7 +6,7 @@ function ldlLevel(level) {
     190: 'high',
   }
   
-  for (r in levelRange) {
+  for (var r in levelRange) {
     if (level < r) {
       return levelRange[r];
     }

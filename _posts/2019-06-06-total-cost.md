@@ -1,9 +1,10 @@
 ---
 title: Total Cost
 description: Get the total cost for multiple items
+num: 2
 ---
 
-# {{ page.description }}
+# {{ page.num }}. {{ page.description }}
 
 <script src="/cse/day03/totalCost.js"></script>
 

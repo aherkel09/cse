@@ -13,7 +13,7 @@ function arithmeticMean(numbers) {
   return 'No numbers were entered';
 }
 
-function getNumbers() {
+function getArithNumbers() {
   var counter = 0;
   var numbers_list = prompt('Enter a list of numbers separated by a space: ').split(' ');
   

@@ -21,7 +21,7 @@ function computeMean(numbers, meanType) {
   return 'The ' + types[meanType] + ' mean of ' + numbers + ' is ' + mean;    
 }
 
-function getNumbers(error=false) {
+function getMeanNumbers(error=false) {
   if (error) {
     alert('Error: please enter only numbers');
   }

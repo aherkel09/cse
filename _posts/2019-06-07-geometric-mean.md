@@ -13,7 +13,7 @@ function geometricMean(numbers) {
   var product = 1;
   
   for (var n in numbers) {
-    product *= numbers[n];
+    product *= Number(numbers[n]);
   }
   
   var mean = product ** (1/numbers.length);

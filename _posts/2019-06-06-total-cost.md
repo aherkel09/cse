@@ -8,21 +8,22 @@ description: Get the total cost for multiple items
 <script src="/cse/day03/totalCost.js"></script>
 
 ```javascript
-function totalCost(price, num){
-  var totalCost = price*num;
-    alert(totalCost);
+function totalCost(price, num) {
+  var totalCost = price * num;
+  return totalCost;
 }
-function getTotal(){
-  var price = prompt("Please enter price of item.").split('$')[1];
-  var number = prompt("Please enter number of items.");
+
+function getUserPurchase() {
+  var price = prompt("Please enter the price of the item:").split('$')[1];
+  var number = prompt("Please enter the number of items:");
   
   if (!isNaN(price) && !isNaN(number)) {
-    totalCost(price, number);
+    alert(totalCost(price, number));
   } else {
     alert('Error: please enter only numbers.');
-    getTotal();
+    getUserPurchase();
   }
 }
 ```
 
-<button type="button" onclick="getTotal()">Enter Values</button>
+<button type="button" onclick="getUserPurchase()">Enter Values</button>

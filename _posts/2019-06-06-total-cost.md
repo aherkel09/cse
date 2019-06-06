@@ -3,6 +3,10 @@ title: Total Cost
 description: Get the total cost for multiple items
 ---
 
+# {{ page.description }}
+
+<script src="/cse/day03/totalCost.js"></script>
+
 ```javascript
 function totalCost(price, num){
   var totalCost = price*num;
@@ -14,3 +18,5 @@ function getTotal(){
   totalCost(price, number);
 }
 ```
+
+<button type="button" onclick="getTotal()">Enter Values</button>

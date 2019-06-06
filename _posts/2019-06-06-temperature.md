@@ -21,6 +21,7 @@ function getTotal(){
   } else {
     alert('Error: please enter only numbers.');
     getTotal();
+  }
 }
 ```
 

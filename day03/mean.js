@@ -22,7 +22,7 @@ function computeMean(numbers, meanType) {
 }
 
 function getMeanNumbers() {
-  var numbers = []
+  var numbers = [];
   
   while (numbers.length < 3) {
     var newNum = prompt('Please enter a number: ');

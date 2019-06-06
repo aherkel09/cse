@@ -1,9 +1,10 @@
 ---
 title: Arithmetic Mean
 description: Calculate the arithmetic mean of a set of numbers
+num: 6
 ---
 
-# {{ page.description }}
+# {{ page.num }}. {{ page.description }}
 
 <script src="/cse/day03/arithmeticMean.js"></script>
 

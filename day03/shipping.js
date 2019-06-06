@@ -6,4 +6,7 @@ function shipping(totalPretax){
   }
 }
 function pretaxAmount(){
+  var pretax = prompt("Enter the total pre-tax amount of order.");
   
+shipping(pretax);
+}

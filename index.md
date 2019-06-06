@@ -1,3 +1,3 @@
 # CSE 115 JavaScript Exercises
 
-<script src="day03/ldl_level.js"></script>
+[Check your LDL level](day03/ldl_level.md)

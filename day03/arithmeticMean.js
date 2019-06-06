@@ -2,12 +2,12 @@ function arithmeticMean(numbers) {
   var total = 0;
   
   for (var n in numbers) {
-    total += Number(numbers[n]);
+    total += numbers[n];
   }
   
   if (numbers.length) {
     var mean = total / numbers.length
-    return 'The arithmetic mean of ' + String(numbers) + ' is ' + mean;
+    return 'The arithmetic mean of ' + numbers + ' is ' + mean;
   }
   
   return 'No numbers were entered';

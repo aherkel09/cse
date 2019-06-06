@@ -9,13 +9,14 @@ num: 2
 <script src="/cse/day03/totalCost.js"></script>
 
 ```javascript
+
 function totalCost(price, num) {
   var totalCost = price * num;
   return totalCost;
 }
 
 function getUserPurchase() {
-  var price = prompt("Please enter the price of the item:").split('$')[1];
+  var price = prompt("Please enter the price of the item:").replace('$', '');
   var number = prompt("Please enter the number of items:");
   
   if (!isNaN(price) && !isNaN(number)) {

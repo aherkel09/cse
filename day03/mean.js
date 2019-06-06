@@ -13,7 +13,7 @@ function computeMean(numbers, meanType) {
   } else if (meanType == 1) { // geometric mean
     counter += 1 // start counter at 1
     for (var n in numbers) {
-      counter *= numbers[n];
+      counter *= Number(numbers[n]);
     }
     mean = counter ** (1/numbers.length);
   }

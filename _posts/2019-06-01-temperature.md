@@ -1,6 +1,6 @@
 ---
 title: Check the Temperature
-description: Check the Temperature
+description: Check the temperature
 num: 1
 ---
 

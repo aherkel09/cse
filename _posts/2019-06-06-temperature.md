@@ -3,6 +3,8 @@ title: Check the Temperature
 description: Check the Temperature
 ---
 
+# {{ page.description }}
+
 <script src="/cse/day03/Temperature.js"></script>
 
 ```javascript

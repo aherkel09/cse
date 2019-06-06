@@ -1,5 +1,5 @@
 # CSE 115 JavaScript Exercises
 
 {% for post in site.posts %}
-  [{{ post.description }}]({{ post.url }})
+  [{{ post.description }}](cse/{{ post.url }})
 {% endfor %}

@@ -5,7 +5,7 @@ description: Check the Temperature
 
 # {{ page.description }}
 
-<script src="/cse/day03/Temperature.js"></script>
+<script src="/cse/day03/totalCost.js"></script>
 
 ```javascript
 function totalCost(price, num){

@@ -3,7 +3,7 @@ function totalCost(price, num){
     alert(totalCost);
 }
 function getTotal(){
-  var price = prompt("Please enter price of item.").split('$')[0];
+  var price = prompt("Please enter price of item.").split('$')[1];
   var number = prompt("Please enter number of items.");
   
   if (!isNaN(price) && !isNaN(number)) {

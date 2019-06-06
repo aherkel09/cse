@@ -20,10 +20,8 @@ function get_level() {
   
   try {
     var level = ldl_level(Math.abs(Number(ldl)));
-    alert('Your LDL level is', level);
+    alert('Your LDL level is ' + level);
   } catch {
     alert('Error: please enter only numbers');
   }
 }
-
-get_level();

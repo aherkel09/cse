@@ -8,18 +8,19 @@ description: Check the Temperature
 <script src="/cse/day03/Temperature.js"></script>
 
 ```javascript
-function weather(temperature){
-  if (temperature < 65){
-    alert("cold");
-  }else if (temperature > 85){
-    alert("hot");
-  }else{
-    alert("comfortable");
-  }
+function totalCost(price, num){
+  var totalCost = price*num;
+    alert(totalCost);
 }
-function getTemp(){
-  var temp = prompt("Please enter a temperature");
-  return weather(temp);
+function getTotal(){
+  var price = prompt("Please enter price of item.").split('$')[0];
+  var number = prompt("Please enter number of items.");
+  
+  if (!isNaN(price) && !isNaN(number)) {
+    totalCost(price, number);
+  } else {
+    alert('Error: please enter only numbers.');
+    getTotal();
 }
 ```
 

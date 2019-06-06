@@ -7,3 +7,7 @@ function weather(temperature){
     alert("comfortable");
   }
 }
+function getTemp(){
+  var temp = prompt("Please enter a temperature");
+  return weather(temp);
+}

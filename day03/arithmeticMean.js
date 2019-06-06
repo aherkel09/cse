@@ -2,7 +2,7 @@ function arithmeticMean(numbers) {
   var total = 0;
   
   for (var n in numbers) {
-    total += numbers[n];
+    total += Number(numbers[n]);
   }
   
   if (numbers.length) {

@@ -5,7 +5,7 @@ description: Check the Temperature
 
 # {{ page.description }}
 
-<script src="/cse/day03/Temperature.js"></script>
+<script src="/cse/day03/temperature.js"></script>
 
 ```javascript
 function weather(temperature){

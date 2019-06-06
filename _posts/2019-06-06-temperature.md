@@ -1,6 +1,7 @@
 ---
 title: Check the Temperature
 description: Check the Temperature
+exerciseNumber: 1
 ---
 
 # {{ page.description }}

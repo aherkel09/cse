@@ -1,12 +1,12 @@
-function shipping(totalPretax){
-  if (totalPretax >= 100){
+function shippingCost(totalPretax) {
+  if (totalPretax >= 100) {
     alert("Free Shipping!");
-  }else{
+  } else {
     alert(totalPretax*0.1);
   }
 }
+
 function pretaxAmount(){
-  var pretax = prompt("Enter the total pre-tax amount of order.");
-  
-shipping(pretax);
+  var pretax = prompt("Enter the total pre-tax amount of order:");
+  return shippingCost(pretax);
 }

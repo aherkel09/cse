@@ -19,10 +19,10 @@ function getLevel() {
   var ldl = prompt('Please enter your LDL level: ')
   
   try {
-    var level = ldl_level(Math.abs(Number(ldl)));
+    var level = ldlLevel(Math.abs(Number(ldl)));
     alert('Your LDL level is ' + level);
-  } catch {
+  } catch(err) {
     alert('Error: please enter only numbers');
-    getLevel();
+    console.log(err)
   }
 }

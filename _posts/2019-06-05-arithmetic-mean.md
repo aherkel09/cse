@@ -17,13 +17,13 @@ function arithmeticMean(numbers) {
   
   if (numbers.length) {
     var mean = total / numbers.length
-    return 'The arithmetic mean of ' + String(numbers) + ' is ' + mean;
+    return 'The arithmetic mean of ' + numbers + ' is ' + mean;
   }
   
   return 'No numbers were entered';
 }
 
-function getNumbers() {
+function getArithNumbers() {
   var counter = 0;
   var numbers_list = prompt('Enter a list of numbers separated by a space: ').split(' ');
   
@@ -37,6 +37,9 @@ function getNumbers() {
     alert(arithmeticMean(numbers_list));
   }
 }
+  
+  
+
 ```
 
-<button type="button" onclick="getNumbers()">Enter Numbers</button>
+<button type="button" onclick="getArithNumbers()">Enter Numbers</button>

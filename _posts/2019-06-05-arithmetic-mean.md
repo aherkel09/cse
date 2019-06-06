@@ -5,6 +5,8 @@ description: Calculate the arithmetic mean of a set of numbers
 
 # {{ page.description }}
 
+<script src="/cse/day03/arithmeticMean.js"></script>
+
 ```javascript
 function arithmeticMean(numbers) {
   var total = 0;

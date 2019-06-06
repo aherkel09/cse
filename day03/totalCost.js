@@ -1,0 +1,1 @@
+function totalCost(price, num){

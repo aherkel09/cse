@@ -4,7 +4,7 @@ function totalCost(price, num) {
 }
 
 function getUserPurchase() {
-  var price = prompt("Please enter the price of the item:").split('$')[1];
+  var price = prompt("Please enter the price of the item:").replace('$', '');
   var number = prompt("Please enter the number of items:");
   
   if (!isNaN(price) && !isNaN(number)) {

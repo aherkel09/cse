@@ -14,7 +14,6 @@ function arithmeticMean(numbers) {
   }
   
   if (numbers.length) {
-    console.log(total + ' / ' + numbers.length);
     var mean = total / numbers.length
     return 'The arithmetic mean of ' + String(numbers) + ' is ' + mean;
   }

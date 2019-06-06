@@ -16,12 +16,8 @@ function geometricMean(numbers) {
     product *= numbers[n];
   }
   
-  if (numbers.length) {
-    var mean = product ** (1/numbers.length);
-    return 'The geometric mean of ' + numbers + ' is ' + mean;
-  } else {
-    return 'No numbers were entered';
-  }
+  var mean = product ** (1/numbers.length);
+  return 'The geometric mean of ' + numbers + ' is ' + mean;
 }
 
 function getGeoNumbers() {
@@ -29,13 +25,15 @@ function getGeoNumbers() {
   var numbers_list = prompt('Enter a list of numbers separated by a space: ').split(' ');
   
   for (var l in numbers_list) {
-    counter += isNaN(numbers_list[l]);
+    counter += isNaN(numbers_list[l]); // adds 1 to counter if non-numeric character in numbers_list
   }
   
   if (counter > 0) {
     alert('Error: please enter only numbers');
-  } else if (counter == 0) {
+  } else if (counter == 0 && numbers_list.length) { // check length to avoid dividing by 0
     alert(geometricMean(numbers_list));
+  } else {
+    alert('No numbers were entered');
   }
 }
 ```

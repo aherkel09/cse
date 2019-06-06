@@ -1,8 +1,13 @@
+---
+title: LDL Level
+description: Check your LDL level
+---
+
 ### Check your LDL level
 
 <script src="ldlLevel.js"></script>
 
-```
+```javascript
   function ldlLevel(level) {
     var levelRange = {
       100: 'optimal',

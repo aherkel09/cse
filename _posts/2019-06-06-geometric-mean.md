@@ -1,9 +1,10 @@
 ---
 title: Geometric Mean
 description: Calculate the geometric mean of a set of numbers
+num: 7
 ---
 
-# {{ page.description }}
+# {{ page.num }}. {{ page.description }}
 
 <script src="/cse/day03/geometricMean.js"></script>
 

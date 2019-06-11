@@ -2,12 +2,13 @@ def get_multiples(limit):
     if limit <= 0 or limit >= 1000: # defined on {0 < limit < 1000}
         return print('Please choose a positive number less than 1000\n')
     
-    count = 0
-    while count <= limit:
-        if count % 3 == 0 or count % 5 == 0:
-            print(count)
-        count += 1
-    return print('Limit Reached\n')
+    index = 0
+    sum_multiples = 0
+    while index <= limit:
+        if index % 3 == 0 or index % 5 == 0:
+            sum_multiples += index
+        index += 1
+    return print(sum_multiples)
 
 def get_number():
     limit = input('Please enter a number: ')

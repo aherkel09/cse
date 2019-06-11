@@ -1,1 +1,2 @@
-def integer
+def check(integer):
+  

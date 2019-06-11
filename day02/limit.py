@@ -1,18 +1,23 @@
-def test():
-    limit = int(input("enter a number: "))
-    for i in range(1, limit + 1):
-        if isEven(i) == True:
-            print(i)
+def get_limit():
+    limit = input("enter a number: ")
+    
+    try:
+        limit = int(limit)
+        for i in range(1, limit + 1):
+            if isEven(i) == True:
+                print(i)
+    except:
+        print('Error: please enter only numbers')
+        get_limit()
 
 
-def isEven(num): #500
-    n = num 
-    while n > 0:
-        digit = n % 10 #0
-        n = n // 10 #50
+def isEven(num):
+    while num > 0:
+        digit = num % 10 # get last digit
         if digit % 2 != 0:
             return False
+        num = num // 10 # remove last digit & start over
     return True
 
-
-test()
+if __name__ == '__main__':
+    get_limit()

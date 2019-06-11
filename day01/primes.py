@@ -1,9 +1,23 @@
+def check_prime(num):
+    if num < 2:
+        return False
+    elif num == 2:
+        return True
+    
+    count = 2
+    while count < num:
+        if num % count == 0:
+            return False
+        count += 1
+
+    return True
+
 def get_primes(limit):
     primes = [2]
     count = 2
 
     while count <= limit:
-        if count not in primes and prime.check_prime(count):
+        if count not in primes and check_prime(count):
             primes += [count]
         count += 1
 
@@ -19,7 +33,4 @@ def get_number():
         get_number()
 
 if __name__ == '__main__':
-    import check_prime as prime
     get_number()
-else:
-    from day01 import check_prime as prime

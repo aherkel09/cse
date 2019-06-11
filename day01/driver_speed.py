@@ -8,7 +8,7 @@ def get_speed():
         get_speed()
     
 def get_points(speed):
-    points = (round(speed - 56) // 5) + 1
+    points = round(speed - 55) // 5
     
     if points < 1:
         print('OK')

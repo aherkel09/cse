@@ -14,4 +14,5 @@ function getPretaxAmount(){
   } else {
     alert('Error: please enter only numbers');
     return getPretaxAmount();
+  }
 }

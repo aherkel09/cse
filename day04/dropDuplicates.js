@@ -1,1 +1,3 @@
-
+function dropDuplicates(arr1, arr2) {
+  for (var a in arr1) {
+    if (arr2.includes(arrl // more later...

@@ -1,8 +1,6 @@
-def date():
+def get_next_date(year, month, day):
     day31 = [1, 3, 5, 7, 8, 10, 12]
-    year = int(input("Input a year: "))
-    month = int(input("Input a month: "))
-    day = int(input("Input a day: "))
+    
     if month in day31 and day == 31 and month == 12:
         day = 1
         month = 1
@@ -20,5 +18,16 @@ def date():
         day = day + 1
     print("The next date is: " + str(year) + "-" + str(month) + "-" + str(day))
 
+def get_start_date():
+    year = input("Input a year: ")
+    month = input("Input a month: ")
+    day = input("Input a day: ")
+    
+    try:
+        get_next_date(int(year), int(month), int(day))
+    except:
+        print('Error: please enter a valid date using only numbers')
+        get_start_date()
 
-date()
+if __name__ == '__main__':
+    get_start_date()

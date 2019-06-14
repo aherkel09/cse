@@ -21,8 +21,8 @@ function dropDuplicates(arr1, arr2) {
 }
 
 function getItems() {
-  var first = prompt('Please enter a list of items separated by a comma:');
-  var second = prompt('Please enter another list of items separated by a comma:');
+  var first = prompt('Please enter a list of items separated by a comma:').replace(/\s/g, '').split(',');
+  var second = prompt('Please enter another list of items separated by a comma:').replace(/\s/g, '').split(',');
   
   try {
     alert(dropDuplicates(first, second));

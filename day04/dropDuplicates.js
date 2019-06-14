@@ -1,6 +1,6 @@
 function dropDuplicates(arr1, arr2) {
   for (var a in arr1) {
-    if (arr2.includes(arrl[a])) {
+    if (arr2.includes(arr1[a])) {
       arr1.splice(a, 1);
     }
   }

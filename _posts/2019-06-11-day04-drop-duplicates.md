@@ -11,9 +11,9 @@ num: 5
 
 ```javascript
 function dropDuplicates(arr1, arr2) {
-  for (var a in arr1) {
-    if (arr2.includes(arr1[a])) {
-      arr1.splice(a, 1);
+  for (var a in arr2) {
+    if (arr1.includes(arr2[a])) {
+      arr1.splice(arr1.indexOf(arr2[a]), 1);
     }
   }
   

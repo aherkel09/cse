@@ -1,10 +1,11 @@
 ---
 title: Check the Temperature
 description: Check the temperature
+day: 03
 num: 1
 ---
 
-# {{page.num }}. {{ page.description }}
+# Day {{ page.day }} - Exercise {{page.num }}: {{ page.description }}
 
 <script src="/cse/day03/temperature.js"></script>
 

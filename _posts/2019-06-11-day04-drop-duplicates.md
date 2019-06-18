@@ -5,7 +5,7 @@ day: 04
 num: 5
 ---
 
-# Day {{ page.day }} - {{ page.num }}. {{ page.description }}
+# Day {{ page.day }} - Exercise {{page.num }}: {{ page.description }}
 
 <script src="/cse/day04/dropDuplicates.js"></script>
 

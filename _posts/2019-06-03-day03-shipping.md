@@ -1,10 +1,11 @@
 ---
 title: Shipping Cost
 description: Check the shipping cost of an order
+day: 03
 num: 3
 ---
 
-# {{ page.num }}. {{ page.description }}
+# Day {{ page.day }} - Exercise {{page.num }}: {{ page.description }}
 
 <script src="/cse/day03/shipping.js"></script>
 

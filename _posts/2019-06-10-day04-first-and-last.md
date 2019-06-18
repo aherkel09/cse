@@ -5,4 +5,4 @@ day: 04
 num: 4
 ---
 
-# Day {{ page.day }} - {{ page.num }}. {{ page.description }}
+# Day {{ page.day }} - Exercise {{page.num }}: {{ page.description }}

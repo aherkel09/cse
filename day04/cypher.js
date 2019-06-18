@@ -28,7 +28,7 @@ function getWordsToReverse() {
   var words = prompt('Please enter a string of words to reverse:');
   
   try {
-    advanceThreeLetters(words);
+    alert(advanceThreeLetters(words));
   } catch(error) {
     console.log('Error:', error);
   }

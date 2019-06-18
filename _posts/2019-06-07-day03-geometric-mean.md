@@ -1,10 +1,11 @@
 ---
 title: Geometric Mean
 description: Calculate the geometric mean of a set of numbers
+day: 03
 num: 7
 ---
 
-# {{ page.num }}. {{ page.description }}
+# Day {{ page.day }} - Exercise {{page.num }}: {{ page.description }}
 
 <script src="/cse/day03/geometricMean.js"></script>
 

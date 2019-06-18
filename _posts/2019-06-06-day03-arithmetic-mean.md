@@ -1,10 +1,11 @@
 ---
 title: Arithmetic Mean
 description: Calculate the arithmetic mean of a set of numbers
+day: 03
 num: 6
 ---
 
-# {{ page.num }}. {{ page.description }}
+# Day {{ page.day }} - Exercise {{page.num }}: {{ page.description }}
 
 <script src="/cse/day03/arithmeticMean.js"></script>
 

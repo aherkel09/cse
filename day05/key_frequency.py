@@ -1,14 +1,14 @@
-def get_frequency(data, value):
+def get_frequency(data, key):
     freq = 0
     for d in data:
-        if data[d] == value:
+        if d == key:
             freq += 1
     
-    return str(value) + ' occurs ' + str(freq) + ' time(s).'
+    return str(key) + ' occurs ' + str(freq) + ' time(s).'
 
 def get_data():
     dictionary = input('Please enter key/value pairs (e.g., key1: value1, key2: value2): ')
-    value = input('Enter a value to see how frequently it occurs: ')
+    key = input('Enter a key to see how frequently it occurs: ')
 
     try:
         data = {}
@@ -18,7 +18,7 @@ def get_data():
             split = key_val[k].split(': ')
             data[split[0]] = split[1]
 
-        print(get_frequency(data, value))
+        print(get_frequency(data, key))
     except Exception as error:
         print('Error:', error)
         get_data()

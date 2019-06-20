@@ -6,7 +6,7 @@ function getFrequency(data, value) {
     }
   }
     
-  return value + ' occurs ' + freq + ' times.';
+  return value + ' occurs ' + freq + ' time(s).';
 }
 
 function getData() {
@@ -17,12 +17,12 @@ function getData() {
     var data = {};
     var key_val = dictionary.split(', ');
 
-    for (var k=0; k < dictionary.length; k++) {
+    for (var k=0; k < key_val.length; k++) {
       var split = key_val[k].split(': ');
       data[split[0]] = split[1];
     }
 
-    alert(get_frequency(data, value));
+    alert(getFrequency(data, value));
   } catch(error) {
     console.log('Error:', error);
   }

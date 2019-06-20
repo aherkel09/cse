@@ -1,16 +1,22 @@
-def implode(string):
-    chars = ''
-    for s in string:
-        if s not in chars:
-            chars += s
+def implode(string_list):
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    imploded = []
     
-    return chars
+    for string in string_list:
+        chars = ''
+        for a in alpha:
+            if a in string and a not in chars:
+                chars += a
+        imploded += [chars]
+    
+    return imploded
 
 def get_string():
-    string = input('Please enter a string: ')
+    string_list = input('Please enter a list of strings separated by a comma: ')
     
     try:
-        print(implode(string))
+        string_list = string_list.lower().replace(' ', '').split(',')
+        print(implode(string_list))
     except Exception as error:
         print('Error:', error)
 

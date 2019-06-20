@@ -1,17 +1,17 @@
-function getFrequency(data, value) {
+function getKeyFrequency(data, key) {
   var freq = 0;
   for (var d in data) {
-    if (data[d] == value) {
+    if (d == key) {
       freq ++;
     }
   }
     
-  return value + ' occurs ' + freq + ' time(s).';
+  return key + ' occurs ' + freq + ' time(s).';
 }
 
-function getData() {
+function getKeyData() {
   var dictionary = prompt('Please enter key/value pairs (e.g., key1: value1, key2: value2): ');
-  var value = prompt('Enter a value to see how frequently it occurs: ');
+  var key = prompt('Enter a value to see how frequently it occurs: ');
 
   try {
     var data = {};
@@ -22,7 +22,7 @@ function getData() {
       data[split[0]] = split[1];
     }
 
-    alert(getFrequency(data, value));
+    alert(getKeyFrequency(data, key));
   } catch(error) {
     console.log('Error:', error);
   }

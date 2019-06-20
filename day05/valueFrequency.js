@@ -9,7 +9,7 @@ function getFrequency(data, value) {
   return value + ' occurs ' + freq + ' time(s).';
 }
 
-function getData() {
+function getValueData() {
   var dictionary = prompt('Please enter key/value pairs (e.g., key1: value1, key2: value2): ');
   var value = prompt('Enter a value to see how frequently it occurs: ');
 

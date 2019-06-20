@@ -9,9 +9,9 @@ function getKeysFromValue(data, value) {
   return value + ' is paired with: ' + keys;
 }
 
-function getData() {
+function getObjData() {
   var dictionary = prompt('Please enter key/value pairs (e.g., key1: value1, key2: value2): ');
-  var value = prompt('Enter a value to see how frequently it occurs: ');
+  var value = prompt('Enter a value to see which keys it is paired with: ');
 
   try {
     var data = {};

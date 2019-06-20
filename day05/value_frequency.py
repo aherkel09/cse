@@ -4,7 +4,7 @@ def get_frequency(data, value):
         if data[d] == value:
             freq += 1
     
-    return str(value) + ' occurs ' + str(freq) + ' times.'
+    return str(value) + ' occurs ' + str(freq) + ' time(s).'
 
 def get_data():
     dictionary = input('Please enter key/value pairs (e.g., key1: value1, key2: value2): ')

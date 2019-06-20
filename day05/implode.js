@@ -4,7 +4,6 @@ function implode(list) {
   
   for (var l in list) {
     var chars = '';
-    list[l] = list[l].toLowerCase();
     for (var a in alpha) {
       if (list[l].includes(alpha[a]) && !chars.includes(alpha[a])) {
         chars += alpha[a];
@@ -20,7 +19,7 @@ function getStringToImplode() {
   var strings = prompt('Please enter a list of strings separated by a comma:');
   
   try {
-    var stringList = strings.replace(/\s/g, '').split(',');
+    var stringList = strings.toLowerCase().replace(/\s/g, '').split(',');
     alert(implode(stringList));
   } catch(error) {
     console.log(error);

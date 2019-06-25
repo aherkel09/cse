@@ -21,7 +21,7 @@ def quick_sort(word_list):
     return less + pivots + greater
 
 def get_kwic_index():
-    print('Reading text from "leviathan_excerpt.txt"...')
+    print('Reading text from "lorem_ipsum.txt"...')
     
     kwic = {}
     words = []
@@ -55,6 +55,8 @@ def get_kwic_index():
             line += w
         
         print(line, '...')
+        
+    return (sorted_indices, kwic)
     
 if __name__ == '__main__':
     get_kwic_index()

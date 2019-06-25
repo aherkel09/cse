@@ -56,13 +56,13 @@ def get_number():
         if number >= 5 and number <= 10005:
             print(binary_search(number))
         elif number == 0:
-            print('Goodbye')
+            return print('Goodbye')
         else:
             print('Error: Number must be between 5 & 10,005')
-            get_number()
     except:
         print('Error: Please enter only numbers')
-        get_number()
+    
+    return get_number()
 
 if __name__ == '__main__':
     get_number()

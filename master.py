@@ -9,6 +9,7 @@ def get_functions():
         '02': day02_functions,
         '04': day04_functions,
         '05': day05_functions,
+        '07': day07_functions,
     }
     days_list = [k for k, v in days.items()]
     

@@ -1,4 +1,4 @@
-import day01_functions, day02_functions, day04_functions, day05_functions
+import day01_functions, day02_functions, day04_functions, day05_functions, day06_functions, day07_functions
 
 def get_functions():
     global functions
@@ -9,6 +9,7 @@ def get_functions():
         '02': day02_functions,
         '04': day04_functions,
         '05': day05_functions,
+        '06': day06_functions,
         '07': day07_functions,
     }
     days_list = [k for k, v in days.items()]

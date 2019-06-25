@@ -4,7 +4,7 @@ def get_keys_from_value(data, value):
         if data[d] == value:
             keys += [d]
     
-    return str(value) + ' is paired with: ' + str(keys)'
+    return str(value) + ' is paired with: ' + str(keys)
 
 def get_data():
     dictionary = input('Please enter key/value pairs (e.g., key1: value1, key2: value2): ')

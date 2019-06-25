@@ -7,6 +7,8 @@ num: 2
 
 # Day {{ page.day }} - Exercise {{page.num }}: {{ page.description }}
 
+## Warning: Skip this exercise. Keys cannot be duplicated.
+
 <script src="/cse/day05/keyFrequency.js"></script>
 
 ```javascript

@@ -32,11 +32,3 @@ function getTemp() {
 ```
 
 <button type="button" onclick="getTemp()">Enter Temperature</button>
-
-{% if page.previous.url %}
-  [{{ page.previous.url}}]({{ page.previous.title }})
-{% endif %}
-
-{% if page.next.url %}
-  [{{ page.next.url}}]({{ page.next.title }})
-{% endif %}

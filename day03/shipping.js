@@ -2,7 +2,8 @@ function shippingCost(totalPretax) {
   if (totalPretax >= 100) {
     alert("Free Shipping!");
   } else {
-    alert(totalPretax * 0.1);
+    var shippingCost = totalPretax * 0.1;
+    alert('Shipping Cost ' + shippingCost);
   }
 }
 

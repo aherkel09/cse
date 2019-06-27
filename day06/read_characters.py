@@ -23,7 +23,6 @@ def read_characters(text_file):
 def choose_file():
     files = {
         '1': ('lorem_ipsum.txt', '1000 words of nonsensical Latin text'),
-        '2': ('leviathan_excerpt.txt', '4056 words from a scifi novel'),
     }
 
     print('Select A File:')
@@ -33,7 +32,7 @@ def choose_file():
     selected = input('Enter the number of the file you wish to analyze: ')
 
     try:
-        base_dir=os.getcwd()
+        base_dir = os.getcwd() + '\\day06\\'
         read_characters(base_dir + files[selected][0])
     except:
         print('Error: please enter a valid file selection.')

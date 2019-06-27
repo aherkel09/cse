@@ -22,7 +22,7 @@ def quick_sort(word_list):
 
     return less + pivots + greater
 
-def get_kwic_index():
+def get_kwic_index(print_request):
     print('Reading text from "lorem_ipsum.txt"...')
     
     kwic = {}
@@ -50,21 +50,21 @@ def get_kwic_index():
             kwic[words[w]] = [before, words[w], after]
 
     sorted_indices = quick_sort(list(kwic.keys()))
+    
+    if print_request: # only requested on first run of function
+        for s in sorted_indices:
+            line = ''
+            if len(kwic[s][0]) < longest:
+                line += ' ' * (longest - len(kwic[s][0]))
+            for w in kwic[s]:
+                line += w
 
-    for s in sorted_indices:
-        line = ''
-        if len(kwic[s][0]) < longest:
-            line += ' ' * (longest - len(kwic[s][0]))
-        for w in kwic[s]:
-            line += w
-        
-        print(line, '...')
-        
-    return kwic
+            print(line, '...')
 
-def get_word(initial=True):
-    if initial:
-        kwic = get_kwic_index()
+        return kwic
+
+def get_word(print_index=True):
+    kwic = get_kwic_index(print_index)
         
     word = input('Enter a word to see its context: ')
 
@@ -76,10 +76,10 @@ def get_word(initial=True):
             print(line)
         else:
             print('Error: Search word must be longer than 3 characters')
-            get_word(initial=False)
+            get_word(print_index=False) # get data, but don't print again
     except Exception as error:
         print('Error:', error)
-        get_word(initial=False)
+        get_word(print_index=False)
     
 if __name__ == '__main__':
     get_word()

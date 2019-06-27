@@ -1,3 +1,5 @@
+import os
+
 def quick_sort(word_list):
     less_than = []
     pivots = []
@@ -27,7 +29,9 @@ def get_kwic_index():
     words = []
     longest = 0 # used for formatting output
     
-    with open('lorem_ipsum.txt', 'r') as file:
+    filepath = os.getcwd() + '\\day06\\lorem_ipsum.txt'
+    
+    with open(filepath, 'r') as file:
         for line in file:
             words += [word for word in line.split()]
     

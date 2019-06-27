@@ -61,7 +61,7 @@ def get_kwic_index(print_request):
 
             print(line, '...')
 
-        return kwic
+    return kwic
 
 def get_word(print_index=True):
     kwic = get_kwic_index(print_index)

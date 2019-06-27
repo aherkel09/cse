@@ -13,7 +13,7 @@ def set_functions():
         6: ('Check if your password is valid', password.get_password),
         7: ('Calculate the average of a set of numbers up to a limit', average.get_number),
         8: ('See all the numbers with only even digits up to a limit', even_digits.get_limit),
-        9: ('Convert a dog\'s age to human years', dogs_age.get_age),
+        9: ('Convert a dog\'s calendar age to dog years', dogs_age.get_age),
         10: ('Enter a date to see the date on the following day', next_date.get_start_date)
     }
 

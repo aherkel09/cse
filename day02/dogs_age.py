@@ -4,11 +4,11 @@ def get_dogs_age(years):
 	else:
 		human_age = 21 + (years - 2) * 4
 
-	print("The dog's age in dog's years is", human_age)      
+	print("The dog's age in dog years is", human_age)
 
-def get_age():              
-	years = input("Input a dog's age in human years: ")
-	
+def get_age():
+	years = input("Input a dog's age in calendar years: ")
+
 	try:
 		get_dogs_age(int(years))
 	except:

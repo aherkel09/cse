@@ -11,10 +11,10 @@ function firstLast(arr) {
 
 function getUserArray() {
 	var array = prompt('Please enter an array of items separated by a comma:').split(', ');
-	
+
 	try {
 		var firstAndLast = firstLast(array);
-		alert('The first item of your array is ' + firstAndLast[0] + '. The last is ' + firstAndLast[1] + '.');
+		alert(firstAndLast);
 	} catch(error) {
 		console.log(error);
 	}

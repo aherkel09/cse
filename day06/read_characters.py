@@ -31,7 +31,8 @@ def choose_file():
     selected = input('Enter the number of the file you wish to analyze: ')
 
     try:
-        read_characters(files[selected][0])
+        base_dir='/cse/day06/'
+        read_characters(base_dir='/cse/day06/' + files[selected][0])
     except:
         print('Error: please enter a valid file selection.')
         choose_file()
